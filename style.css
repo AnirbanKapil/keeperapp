@@ -1,0 +1,29 @@
+.header-div{
+    background-color: orange;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+}
+
+.heading{
+    margin-left: 8px;
+}
+
+.footer-div{
+    text-align: center;
+    margin-top: 50%;
+}
+
+.copyright{
+    color: aquamarine;
+}
+
+.note-div{
+    background-color: snow;
+    display: inline-block;
+    width: 20%;
+}
+
+.note-content{
+    padding-left: 9px;
+}
