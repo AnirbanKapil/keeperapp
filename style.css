@@ -104,3 +104,8 @@ li {
     color: #ccc;
   }
  
+
+  .task{
+    cursor: pointer;
+    
+  }

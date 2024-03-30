@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import ToDoItem from "./ToDoItem";
 
 
 function ToDo() {
@@ -31,7 +32,7 @@ function handleAddItem(){
       </div>
       <div>
         <ul>
-          {task.map((list)=> <li>{list}</li>)}
+          {task.map((list)=> <ToDoItem task = {list}/>)}
         </ul>
       </div>
     </div>
