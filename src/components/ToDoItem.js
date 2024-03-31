@@ -1,20 +1,15 @@
 import React from "react";
 import { useState } from "react";
 
-const ToDoItem = ({task}) => {
+const ToDoItem = (props) => {
+ 
+       
 
-    const [isDone,setIsDone] = useState(false)
-
-    function handleClick () {
-        setIsDone((perValue) => !perValue)
-    }
     
     
-    
-
     return(
-        <div onClick={handleClick}>
-           <li className="task" style={{textDecoration : isDone ? "line-through" : "none"}}  >{task}</li>
+        <div onClick={()=>{props.delete(props.id)}}>
+           <li className="task">{props.task}</li>
         </div>
     )
 }

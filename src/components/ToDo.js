@@ -17,6 +17,12 @@ function handleAddItem(){
     if(!input) return;
     setTask((pre)=> [...pre,input])
     setInput("")
+};
+
+function handleDelete (id) {
+  setTask((preItems)=> {
+    return preItems.filter((items,index)=> index !== id)
+  } )
 }
 
   return (
@@ -32,7 +38,13 @@ function handleAddItem(){
       </div>
       <div>
         <ul>
-          {task.map((list)=> <ToDoItem task = {list}/>)}
+          {task.map((list,index)=> 
+          <ToDoItem 
+          key = {index}
+          id = {index}
+          task = {list}
+          delete = {handleDelete}
+          />)}
         </ul>
       </div>
     </div>
